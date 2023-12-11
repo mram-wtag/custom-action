@@ -1,6 +1,3 @@
-# This workflow will build a golang project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
-
 name: Go
 
 on:
@@ -10,14 +7,12 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Run Go Code 
-      uses: mram-wtag/custom-action@v2
-      with:
-        go-file-paths: 'main.go'
-
+      - name: Run Go Code
+        uses: mram-wtag/custom-action@v2
+        with:
+          go-file-paths: 'main.go'
