@@ -10,3 +10,5 @@ inputs:
 runs:
   using: docker
   image: mokhlesur96/custom-action:v2
+  args:
+    - ${{ inputs.go-file-paths }}
