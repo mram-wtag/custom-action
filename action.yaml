@@ -1,8 +1,12 @@
-name: "GoDummy"
-description: "GoDummy"
+name: Run Go Code 
+description: Execute Specified Go Files Code
+
+inputs:
+  go-file-paths:
+    description: Comma Separated Go File Paths to Execute
+    required: true 
+    default: main.go
 
 runs:
-  using: composite 
-  steps:
-  - run: go run main.go
-    shell: bash
+  using: docker
+  image: Dockerfile

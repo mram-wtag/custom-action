@@ -16,11 +16,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Set up Go
-      uses: actions/setup-go@v4
+    - name: Run Go Code 
+      uses: mram-wtag/custom-action@v2
       with:
-        go-version: '1.20'
+        go-file-paths: 'main.go'
 
-    - name: GoDummy
-      uses: mram-wtag/custom-action@v1
-      
