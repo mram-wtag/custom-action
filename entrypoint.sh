@@ -1,9 +1,7 @@
 #!/bin/bash
 
-IFS=',' read -ra GO_FILE_PATHS <<< "$1"
-
-for file in "${GO_FILE_PATHS[@]}"
+for file in "$@"
 do
     echo "Running $file"
-    go run "$file"
+    go run "/app/$file"
 done
