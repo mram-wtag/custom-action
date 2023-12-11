@@ -1,4 +1,4 @@
-name: Run Go Code 
+name: Run Go Code
 description: Execute Specified Go Files Code
 
 inputs:
