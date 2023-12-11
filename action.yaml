@@ -1,0 +1,8 @@
+name: "GoDummy"
+description: "GoDummy"
+
+runs:
+  using: composite 
+  steps:
+  - run: go run main.go
+    shell: bash
